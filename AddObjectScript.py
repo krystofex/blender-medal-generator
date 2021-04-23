@@ -13,16 +13,7 @@ class TestPanel(bpy.types.Panel):
             
         row = layout.row()
         row.operator("mesh.primitive_cylinder_add",icon='NODE_MATERIAL', text="create medal")
-        
-        preset_enum : bpy.props.EnumProperty(
-            name= "",
-            description= "select",
-            items= [
-                ('OP1', "Cube", "Add a Cube"),
-                ('OP2', "Sphere", ""),
-                ("OP3", "Suzanne", "")
-            ]        
-        ))       
+             
 
 def register():
     bpy.utils.register_class(TestPanel)
